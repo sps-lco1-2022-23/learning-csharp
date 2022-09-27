@@ -1,4 +1,4 @@
-# learning-csharp
+# Learning Csharp
 
 This repo will contains assignments, how-to documents, code snippets and anything else I think you might need. 
 
