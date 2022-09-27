@@ -20,5 +20,5 @@ To an extent, we will work things out as we go. I want us to try and use _issues
 
 Generally when you do work, you should commit (which saves a local copy to 'staging'). Then when you're ready, you should push or sync, this copies to the server where I can see it. 
 
-If you open an `issue' you can tag me, so I get notified. I can mark it and close it. I might even raise a `pull request` to suggest changes. 
+If you open an 'issue' you can tag me, so I get notified. I can mark it and close it. I might even raise a 'pull request` to suggest changes. 
 
