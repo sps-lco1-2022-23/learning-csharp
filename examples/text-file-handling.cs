@@ -37,7 +37,7 @@ namespace FileIOConsole
             List<string> lines = new List<string> { "some", "text", "to", "add", "one item per line" }; 
 
             // an alternative use for 'using' - this deals with closing nicely 
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "writeLines.txt")))
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt")))
             {
                 foreach (string line in lines)
                     outputFile.WriteLine(line);
@@ -49,12 +49,19 @@ namespace FileIOConsole
 
         private static void ReadingFromTextFiles()
         {
+            // use a variable name because we'll be repeating ourselves a couple of times            
+            string filename = "testfile.txt";
+            
+            // does it exist? 
+            if(!File.Exists(filename)) 
+                return;
+
             // option 1 - grab it all 
             string s = File.ReadAllText("textfile.txt");
             Console.WriteLine(s);
 
             // option 2 - line by line - note the use of using here 
-            using (StreamReader sr = new StreamReader("testFile.txt"))
+            using (StreamReader sr = new StreamReader(filename))
             {
                 // Read the stream to a string, and write the string to the console.
                 String line = sr.ReadToEnd();
