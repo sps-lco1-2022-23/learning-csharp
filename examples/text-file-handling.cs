@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Linq;
 
 namespace FileIOConsole
 {
@@ -9,12 +10,22 @@ namespace FileIOConsole
     {
         static void Main(string[] args)
         {
-            ReadingFromTextFiles();
+            // open and close 
+            string fileName = "textfile.txt";
+            bool b = File.Exists(fileName);
+            StreamReader myInFile = File.OpenText(fileName);
+            string line = myInFile.ReadLine();
+            // you MUST remember to close it 
+            myInFile.Close();
+
+            // let's do it in a function instead           
+            ReadingFromTextFiles(fileName);
 
             WritingToTextFiles();
 
 
             string stations = File.ReadAllText("stations.txt");
+            List<string> individual = stations.Split('\n').ToList();
 
             // this isn't VS.Code/dotnet.Core so read the key 
             Console.ReadKey();
@@ -34,7 +45,7 @@ namespace FileIOConsole
             // the "." path is the current directory, ".." is the parent 
             // this could be an absolute path 
             string docPath = ".";
-            List<string> lines = new List<string> { "some", "text", "to", "add", "one item per line" }; 
+            List<string> lines = new List<string> { "some", "text", "to", "add", "one item per line" };
 
             // an alternative use for 'using' - this deals with closing nicely 
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt")))
@@ -47,17 +58,15 @@ namespace FileIOConsole
             docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         }
 
-        private static void ReadingFromTextFiles()
+        private static void ReadingFromTextFiles(string filename)
         {
-            // use a variable name because we'll be repeating ourselves a couple of times            
-            string filename = "testfile.txt";
-            
+
             // does it exist? 
-            if(!File.Exists(filename)) 
+            if (!File.Exists(filename))
                 return;
 
             // option 1 - grab it all 
-            string s = File.ReadAllText("textfile.txt");
+            string s = File.ReadAllText(filename);
             Console.WriteLine(s);
 
             // option 2 - line by line - note the use of using here 
