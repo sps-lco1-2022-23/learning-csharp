@@ -23,6 +23,6 @@ There are various places to find ideas of things to do:
 
 ## Half Term
 
-So create a suitable folder (or several) in your repo and work on the problems, e.g. `/usaco/` or `/aoc/`, etc. and go solve some problem. 
+So create a suitable folder (or several) in your repo and work on the problems, e.g. `/usaco/` or `/aoc/` etc. and go solve some problems. 
 
 Commit-and-push regularly! 
