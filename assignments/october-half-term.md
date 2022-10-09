@@ -20,3 +20,9 @@ There are various places to find ideas of things to do:
    - Q2 - lots of setup 
    - Q3 - looking to circumvent brute force 
   - [USACO](http://www.usaco.org/index.php?page=contests) are similar - the bronze problems are generally quite approachable, an advantage here is that it will verify your answers
+
+## Half Term
+
+So create a suitable folder (or several) in your repo and work on the problems, e.g. `/usaco/` or `/aoc/`, etc. and go solve some problem. 
+
+Commit-and-push regularly! 
