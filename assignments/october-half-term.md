@@ -25,4 +25,4 @@ There are various places to find ideas of things to do:
 
 So create a suitable folder (or several) in your repo and work on the problems, e.g. `/usaco/` or `/aoc/` etc. and go solve some problems. 
 
-Commit-and-push regularly! 
+Commit-and-push frequently and regularly! 
