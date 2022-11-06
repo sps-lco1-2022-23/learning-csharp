@@ -41,7 +41,7 @@ Using the System.File object (and its ReadAllBytes function) unpack this bitmap 
 
 The code should first validate that it is actually a bitmap. 
 
-This summary should include: dimensions, colour summary and so on. 
+[Questions](https://docs.google.com/document/d/1MuSXslFgx8ZiHTKbi8IaGyV6heeZ-iBlBNSZymuqRuM/edit#). 
 
 ## Extension
 
@@ -49,11 +49,11 @@ This summary should include: dimensions, colour summary and so on.
 
 [Steganography](https://en.wikipedia.org/wiki/Steganography) is the practice of hiding a message within a larger object. 
 
-Create two functions: the first should take a bitmap (i.e. the name of a file( and a word and, according to optional parameters, rewrite the bitmap file, 'hiding' the word in the outputted file. The other function should take in the name of the written file (and the optional parameters) and return the word that was hidden.
+Create two functions: the first should take a bitmap (i.e. the name of a file and a peice of text) and, according to optional parameters, rewrite the bitmap file, 'hiding' the word in the outputted file. The other function should take in the name of the written file (and the optional parameters) and return the word that was hidden.
 
 At the primary level, changing a particular byte somewhere in the image to an ascii value of a character would suffice, but it is likely to end up with an obvious flaw in the image.
 
-At a secondary level, you should be able to change individual bits - which would be less visible to the human eye.
+At a secondary level, you should be able to change individual bits - which would be less visible to the human eye. So maybe changing just the least significant bits of a sequence of bytes. 
 
 ### 2. With a JPG 
 
