@@ -4,6 +4,8 @@ Using bitwise operators and Binary file formats.
 ## Background 
 We've been looking at using the `&`, `|` and `^` operators to perform bitwise operators on integer values (stored in binary, displayed in denary). 
 
+A sample bmp of the school's crest is in this sub-directory. 
+
 The BMP file format is summarised [here](http://www.fastgraph.com/help/bmp_header_format.html) and in more detail [here](http://www.dragonwins.com/domains/getteched/bmp/bmpfileformat.htm).
 
 ## Sample C# 
