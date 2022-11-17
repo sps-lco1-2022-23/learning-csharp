@@ -43,4 +43,4 @@ Needs a LIFO: using a stack, add all the children to the head item to the head o
 1. Consider a 2d array of integers, where the values represent different colour, consider how a queue might be used to 'flood fill' an area of the grid, i.e. starting from a given location with a target colour, all neighouring cells should be coloured the same colour. 
 1. Given a mathematical statement using parantheses, use a stack to check if the pairs balance.  
 1. Implement a postfix calculator using a stack. 
-1. [Q3](https://olympiad.org.uk/papers/2018/bio/bio18-exam.pdf) on the 2018 BIO paper (``Serial Numbers'') is a classic Queue problem. 
+1. [Q3](https://olympiad.org.uk/papers/2018/bio/bio18-exam.pdf) on the 2018 BIO paper (``Serial Numbers'') is a classic Queue problem (albeit with a twist). 
