@@ -10,6 +10,16 @@ internal class Program
         TestSum();
         TestToStringExplicit();
 
+        Console.WriteLine("non tail");
+
+        TestTEmpty();
+        TestTCount();
+        TestTSum();
+        TestTToStringExplicit();
+
+        Console.WriteLine("tail"); 
+
+
         Console.WriteLine("all tests passed");
     }
 
@@ -38,6 +48,36 @@ internal class Program
     public static void TestToStringExplicit()
     {
         var ill = new IntegerLinkedList(5);
+        ill.Append(7);
+        ill.Append(9);
+        Debug.Assert("{5, 7, 9}" == ill.ToString());
+    }
+
+        public static void TestTEmpty()
+    {
+        IntegerLinkedListWithTail ill = new IntegerLinkedListWithTail();
+        Debug.Assert(0 == ill.Count);
+    }
+
+    public static void TestTCount()
+    {
+        var ill = new IntegerLinkedListWithTail(5);
+        ill.Append(7);
+        ill.Append(9);
+        Debug.Assert(3 == ill.Count);
+    }
+
+    public static void TestTSum()
+    {
+        var ill = new IntegerLinkedListWithTail(5);
+        ill.Append(7);
+        ill.Append(9);
+        Debug.Assert(21 == ill.Sum);
+    }
+
+    public static void TestTToStringExplicit()
+    {
+        var ill = new IntegerLinkedListWithTail(5);
         ill.Append(7);
         ill.Append(9);
         Debug.Assert("{5, 7, 9}" == ill.ToString());

@@ -9,10 +9,10 @@ namespace ListConsole
         static void Main(string[] args)
         {
             // needs the System.Collections.Generic using statement 
-            List<int> brandNewEmptyList = new List<int>(0);
+            List<int> brandNewEmptyList = new List<int>();
 
             // or use a comma separated list in curly brackets 
-            List<int> listOfIntegers = new List<int>() { 1, 2, -4, 3, 4 };
+            List<int> listOfIntegers = new List<int>() { 1, 2, -4, 3, 4 };                      
 
             // use square brackets to get the item at a specific location 
             int head = listOfIntegers[0];
@@ -95,7 +95,9 @@ namespace ListConsole
         }
         static List<int> CreateANewList(List<int> incoming)
         {
-            List<int> returnValue = new List<int>() { 2, 3, 5, 7 };
+            List<int> returnValue = new List<int>();
+            foreach (int i in incoming)
+                returnValue.Add(i);
             return returnValue;
         }
     }

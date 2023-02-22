@@ -16,12 +16,15 @@
             _next = null;
         }
 
-        internal void Append(int v)
+        internal IntegerNode Append(int v)
         {
-            if (_next == null)
+            if (_next == null) { 
                 _next = new IntegerNode(v);
-            else
-                _next.Append(v);
+                return _next;
+            }
+            else {
+                return _next.Append(v);
+            }
         }
 
         public override string ToString()

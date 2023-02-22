@@ -12,7 +12,7 @@ namespace LinkedList.Lib
         public IntegerLinkedList(int v)
         {
             _head = new IntegerNode(v);
-        }
+        }        
 
         public int Count => _head == null ? 0 : _head.Count;
         public int Sum => _head == null ? 0 : _head.Sum;
