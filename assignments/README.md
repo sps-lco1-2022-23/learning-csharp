@@ -9,3 +9,4 @@
 1. [Stacks and Queues](./stacks-queues/)
 1. [Recursion](./recursion/) 
 1. [Linked Lists](./LinkedLists/)
+1. [Binary (Sorted) Trees](./binary-trees/)
