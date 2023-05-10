@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{96524390-01E9-487E-AF33-AB6C58FD6D9E}</ProjectGuid>
+    <ProjectGuid>{B572EDB3-7937-4DE1-969E-EC22612D58FA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Simple.App</RootNamespace>
-    <AssemblyName>Simple.App</AssemblyName>
+    <RootNamespace>ListTasks.App</RootNamespace>
+    <AssemblyName>ListTasks.App</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
