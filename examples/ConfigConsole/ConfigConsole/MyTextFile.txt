@@ -1,0 +1,2 @@
+﻿You do need to make sure the Copy To Output Directory property has been set to "Always"
+

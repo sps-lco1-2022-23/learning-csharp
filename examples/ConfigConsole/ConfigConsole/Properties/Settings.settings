@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConfigConsole.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MySettingValue" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">94</Value>
+    </Setting>
+    <Setting Name="ChangableSetting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mutable</Value>
+    </Setting>
+    <Setting Name="AnotherUserSetting" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">42.0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
