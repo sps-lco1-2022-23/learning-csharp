@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,11 +16,17 @@ namespace ConfigConsole
             string filename = "MyTextFile.txt";
             string fromAFile = System.IO.File.ReadAllText(filename);
 
+            // 1a you could leave it in MyDocuments 
+            string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            // Write the string array to a new file named "WriteLines.txt".
+            StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt"));
+
             // But then where does the filename come from? 
 
-            // go to the Project name in the Soluton Explorer - double click > Settings 
+            // option 2. go to the Project name in the Soluton Explorer - double click > Settings 
 
-            // you will seel that there are some already available - 
+            // you will see that there are some already available - 
             int x = Properties.Settings.Default.MySettingValue;
 
             // Application Settings are immutable, so if you uncomment this, you'll get a red squiggly line ... 
@@ -32,11 +39,11 @@ namespace ConfigConsole
 
             // NB properties are stored in the app.config file as strings 
 
-            // Also in app.config you have a list of <string, string> key-value pairs
+            // option 3 Also in app.config you have a list of <string, string> key-value pairs
             string key = "setting";
             var from_app_setting = ConfigurationManager.AppSettings[key];
 
-            // and finally you have the command line 
+            // 4. and you have the command line 
             // you can iterate through the args parameter 
             foreach (string p in args)
                 Console.WriteLine(p);
@@ -45,6 +52,8 @@ namespace ConfigConsole
 
             // and there are specific tools to parse the command line into an object, e.g. https://www.nuget.org/packages/CommandLineParser 
 
+
+            // option 5 - in Windows GUIs you have the dialog boxes, including OpenFileDialog, to gain user input ... 
         }
     }
 }
